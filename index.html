@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Your Name</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Your Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero d-flex align-items-center">
-        <div class="container text-center">
+    <section class="hero">
+        <div class="hero-content">
             <h1 class="display-4">Welcome to My Portfolio</h1>
             <p class="lead">Developer & Tech Enthusiast</p>
             <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
@@ -38,35 +38,31 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="projects-grid">
         <div class="container">
-            <h2 class="text-center mb-5">My Projects</h2>
-            <div class="row">
-                <!-- Project cards will be added here -->
-                <!-- Duplicate this card structure for each project -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="img/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                            <a href="#" class="btn btn-outline-primary">View on GitHub</a>
-                        </div>
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <!-- Project cards -->
+                <div class="project-card">
+                    <img src="img/project1.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Project 1</h3>
+                        <p>Brief description of the project.</p>
+                        <a href="#" class="btn btn-outline-primary">View on GitHub</a>
                     </div>
                 </div>
+                <!-- Add more project cards -->
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="about-container">
         <div class="container">
-            <h2 class="text-center mb-5">About Me</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/profile.jpg" class="img-fluid rounded-circle" alt="Your Name">
-                </div>
-                <div class="col-md-6">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <img src="img/profile.jpg" alt="Your Name">
+                <div class="about-text">
                     <h3>Who Am I?</h3>
                     <p>Your bio text here. Describe your background, passion, and goals.</p>
                     <h3>Education</h3>
@@ -77,58 +73,48 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5">
+    <section id="skills" class="skills-grid">
         <div class="container">
-            <h2 class="text-center mb-5">My Skills</h2>
-            <div class="row">
-                <!-- Skill items -->
-                <div class="col-md-3 mb-4 text-center">
-                    <div class="skill-item p-4">
-                        <i class="fab fa-html5 fa-3x"></i>
-                        <h4 class="mt-3">HTML5</h4>
-                    </div>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <h4>HTML5</h4>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
-                    <div class="skill-item p-4">
-                        <i class="fa-brands fa-css3-alt fa-3x"></i>
-                        <h4 class="mt-3">HTML5</h4>
-                    </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <h4>CSS3</h4>
                 </div>
-                <!-- Add more skills similarly -->
+                <!-- Add more skills -->
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-dark text-white">
+    <section id="contact" class="contact-wrapper">
         <div class="container">
-            <h2 class="text-center mb-5">Contact Me</h2>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name">
                 </div>
-            </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white text-center py-3">
+    <footer class="footer">
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ef61600db5.js" crossorigin="anonymous"></script>
 </body>
 </html>
