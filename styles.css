@@ -2,6 +2,7 @@
     --primary-color: #2ecc71;
     --secondary-color: #27ae60;
     --spacing: 2rem;
+    --navbar-height: 56px;
 }
 
 /* Base Layout */
@@ -15,6 +16,17 @@ body {
 /* Sections Common Styles */
 section {
     padding: var(--spacing) 0;
+}
+
+section[id] {
+    scroll-margin-top: var(--navbar-height);
+}
+
+#projects,
+#about,
+#skills,
+#contact {
+    padding-top: var(--navbar-height);
 }
 
 .container {
